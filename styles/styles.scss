@@ -30,7 +30,7 @@ h1{
     -moz-osx-font-smoothing: grayscale;
 }
 h2{
-    font-size: 1.75em;
+    font-size: 2em;
     line-height: 1.35em;
     margin-top: 0;
     padding-top: 0;
@@ -39,6 +39,7 @@ h2{
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 p{
@@ -58,4 +59,8 @@ button{
     border: none;
     border-radius: .35714em;
     margin: 5px;
+}
+
+.content-section{
+    padding: 6em 0;
 }

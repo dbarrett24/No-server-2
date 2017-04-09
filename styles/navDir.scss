@@ -1,11 +1,35 @@
-.navDir {
-    background: black;
-    opacity: .3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 75px;
-   
+.nav-contain{
+    position: relative;
+    
+    .navDir {
+        background: black;
+        opacity: 0.3;
+        width: 100vw;
+        height: 75px;
+    }
+    .link-contain{
+        width: 100vw;
+        height: 75px;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .logo{
+            margin-right: 30px;
+          
+          img{
+              height: 75px;
+          }
+        }
+
+        .nav-link{
+        
+            
+        }
+
+    }
 }
+
 
