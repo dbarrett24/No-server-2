@@ -4,6 +4,8 @@
 @import 'home';
 @import 'navDir';
 @import 'plxMountain';
+@import 'marketplace.scss';
+@import 'footerDir.scss';
 
 html{
     font-family: $mainFont;
@@ -59,8 +61,36 @@ button{
     border: none;
     border-radius: .35714em;
     margin: 5px;
+    cursor: pointer;
+    
 }
 
 .content-section{
     padding: 6em 0;
+}
+
+input{
+    background-color: #fff;
+    font-weight: 300;
+    border: 1px solid #d0d3d5;
+    color: #676d72;
+    vertical-align: middle;
+    margin-bottom: .75em;
+    width: 100%;
+    background-clip: border-box;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    transition: background-color .3s,color .3s,border .3s;
+    display: inline-block;
+    padding: .85714em;
+    font-size: .875em;
+    line-height: 1.71429em;
+    border-radius: .35714em;
+    user-select: text;
+    cursor: auto;
+}
+ul{
+    list-style-type: none;
+    color: #292d35;
 }

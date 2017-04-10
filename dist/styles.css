@@ -114,9 +114,12 @@ input, select {
     line-height: 1.08em; }
     .home-banner .tagline-wrapper h1 {
       font-size: 3.125em; }
+    .home-banner .tagline-wrapper .btn-banner {
+      z-index: 4; }
 
 .nav-contain {
-  position: relative; }
+  position: absolute;
+  top: 0px; }
   .nav-contain .navDir {
     background: black;
     opacity: 0.3;
@@ -241,6 +244,151 @@ input, select {
       display: flex;
       justify-content: center; }
 
+.head-container {
+  width: 100%;
+  height: 35vh;
+  background: linear-gradient(120deg, #00c4cc 25%, #6e4593 85%);
+  display: flex;
+  justify-content: center; }
+  .head-container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .head-container .row h1 {
+      color: #fff;
+      font-size: 48px;
+      line-height: 1.16667em;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: .5em;
+      font-weight: 300; }
+    .head-container .row p {
+      color: #fff;
+      font-size: 18.4px;
+      line-height: 1.27273em;
+      margin: 0 auto;
+      max-width: 27.27273em;
+      font-weight: 300; }
+    .head-container .row button {
+      margin-top: 1.71429em;
+      padding: 15px 3.42857em; }
+
+.main-container-marketplace {
+  position: relative;
+  background: #EBECED;
+  padding: 25px 35px;
+  height: 100vh; }
+  .main-container-marketplace .grid-row {
+    width: 100%;
+    height: 100%;
+    max-width: 75em;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap; }
+    .main-container-marketplace .grid-row .menu-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25%;
+      border-radius: 5px;
+      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08); }
+      .main-container-marketplace .grid-row .menu-container .search-bar-container {
+        background: #F2F2F2;
+        padding: 10px; }
+        .main-container-marketplace .grid-row .menu-container .search-bar-container .search-bar {
+          border: 1px solid #d5d5d5;
+          background-size: 16px 16px;
+          background: #FFF url(https://static.canva.com/static/images/marketplace/svg-mixin/svg/search.svg) no-repeat calc(100% - 12px) 50%;
+          font-weight: 400;
+          padding: .71429em 2.57143em .71429em .85714em;
+          margin: 0; }
+      .main-container-marketplace .grid-row .menu-container .menu-items-container {
+        background: #FFF;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: .75em 0.5em; }
+        .main-container-marketplace .grid-row .menu-container .menu-items-container .menu-item {
+          width: 100%;
+          font-size: 0.925em;
+          line-height: 1.85714em;
+          font-weight: 300;
+          margin: 0;
+          font-family: Open Sans,Helvetica NeueHelvetica,Arial,sans-serif;
+          padding: 0em 0.875em;
+          border-radius: 5px; }
+        .main-container-marketplace .grid-row .menu-container .menu-items-container .menu-item:hover {
+          background-color: lightgray;
+          transition: all 0.3s; }
+    .main-container-marketplace .grid-row .item-card {
+      position: relative;
+      top: 0;
+      left: 305px;
+      width: 25%;
+      border-radius: 5px;
+      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+      margin-right: 25px;
+      margin-bottom: 25px;
+      background: white; }
+      .main-container-marketplace .grid-row .item-card .cardImage img {
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+      .main-container-marketplace .grid-row .item-card .card-caption {
+        border-top: .5px solid lightgray;
+        padding: 0.75em;
+        height: 60px; }
+        .main-container-marketplace .grid-row .item-card .card-caption .cardTitle {
+          color: #636973;
+          font-size: .8125em;
+          font-weight: 600; }
+        .main-container-marketplace .grid-row .item-card .card-caption .cardTitle:hover {
+          color: #00c4cc;
+          font-size: .8125em;
+          font-weight: 600; }
+        .main-container-marketplace .grid-row .item-card .card-caption .cardCategory {
+          color: #979797;
+          font-size: .8125em; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  font-size: 16px;
+  background: #292D35;
+  width: 100%;
+  height: 471px;
+  display: flex;
+  justify-content: space-between; }
+  footer .footer-upper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    footer .footer-upper-wrapper .branding {
+      width: 20%;
+      display: flex; }
+      footer .footer-upper-wrapper .branding div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; }
+    footer .footer-upper-wrapper .resources {
+      width: 20%;
+      display: flex; }
+      footer .footer-upper-wrapper .resources .resource h2 {
+        font-size: 16px; }
+      footer .footer-upper-wrapper .resources .resource ul {
+        color: #484d56; }
+
 html {
   font-family: "Open Sans", sans-serif;
   color: #FFF;
@@ -289,9 +437,35 @@ button {
   background-color: #f2f2f2;
   border: none;
   border-radius: .35714em;
-  margin: 5px; }
+  margin: 5px;
+  cursor: pointer; }
 
 .content-section {
   padding: 6em 0; }
+
+input {
+  background-color: #fff;
+  font-weight: 300;
+  border: 1px solid #d0d3d5;
+  color: #676d72;
+  vertical-align: middle;
+  margin-bottom: .75em;
+  width: 100%;
+  background-clip: border-box;
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  transition: background-color .3s,color .3s,border .3s;
+  display: inline-block;
+  padding: .85714em;
+  font-size: .875em;
+  line-height: 1.71429em;
+  border-radius: .35714em;
+  user-select: text;
+  cursor: auto; }
+
+ul {
+  list-style-type: none;
+  color: #292d35; }
 
 /*# sourceMappingURL=maps/styles.css.map */

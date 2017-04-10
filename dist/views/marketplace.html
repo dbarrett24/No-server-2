@@ -1,0 +1,62 @@
+<nav-dir class="marketplace-nav"></nav-dir>
+
+<div class="head-container">
+    <div class="row">
+        <h1>Design Templates</h1>
+        <p>The best curated collection of high-quality design templates for all your graphic needs.</p>
+        <a><button>Sign up for free now!</button></a>
+    </div>
+</div>
+
+<div class="main-container-marketplace">
+    <div class="grid-row">
+        <div class="menu-container">
+            <div class="search-bar-container">
+                <input class="search-bar" type="text" placeholder="Search">
+            </div>
+
+            <ul class="menu-items-container">
+                <li class="menu-item">All Templates</li>
+                <li class="menu-item">Cards</li>
+                <li class="menu-item">Invitations</li>
+                <li class="menu-item">Flyers</li>
+                <li class="menu-item">Posters</li>
+                <li class="menu-item">Banners</li>
+                <li class="menu-item">Resumes</li>
+                <li class="menu-item">Certificates</li>
+                <li class="menu-item">Infographics</li>
+                <li class="menu-item">Book Covers</li>
+                <li class="menu-item">CD Covers</li>
+                <li class="menu-item">Presentations</li>
+                <li class="menu-item">Social Graphics</li>
+                <li class="menu-item">Business Cards</li>
+                <li class="menu-item">Letterheads</li>
+                <li class="menu-item">Postcards</li>
+                <li class="menu-item">Desktop Wallpapers</li>
+                <li class="menu-item">Photo Collages</li>
+                <li class="menu-item">Gift Certificates</li>
+                <li class="menu-item">Magazine Covers</li>
+                <li class="menu-item">Menus</li>
+                <li class="menu-item">Brochures</li>
+                <li class="menu-item">Logos</li>
+            </ul>
+        </div>
+
+        <div class="item-card" ng-repeat="card in cardInfo">
+            
+            <div class="cardImage">
+                
+                <img src="{{card.image}}">
+                
+            </div>
+            
+            <div class="card-caption">
+                <strong><a class="cardTitle">{{card.title}}</a></strong><br>
+                <a class="cardCategory">{{card.category}}</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--<footer-dir></footer-dir>-->
+
