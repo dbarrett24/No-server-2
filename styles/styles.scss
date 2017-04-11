@@ -1,0 +1,96 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import 'variables';
+@import 'home';
+@import 'navDir';
+@import 'plxMountain';
+@import 'marketplace.scss';
+@import 'footerDir.scss';
+
+html{
+    font-family: $mainFont;
+    color: $font-color;
+    font-size: 1em;
+    font-weight: 300;
+    
+}
+
+a{
+    text-decoration: none;
+    color: $font-color;
+    font-weight: 400;
+}
+h1{
+    font-size: 2em;
+    line-height: 1.35em;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: .40em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h2{
+    font-size: 2em;
+    line-height: 1.35em;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: .40em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+p{
+    font-weight: 400;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1.5em;
+}
+
+button{
+    padding: .90em 1.25em;
+    color: #000;
+    font-weight: 400;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: .35714em;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+.content-section{
+    padding: 6em 0;
+}
+
+input{
+    background-color: #fff;
+    font-weight: 300;
+    border: 1px solid #d0d3d5;
+    color: #676d72;
+    vertical-align: middle;
+    margin-bottom: .75em;
+    width: 100%;
+    background-clip: border-box;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    transition: background-color .3s,color .3s,border .3s;
+    display: inline-block;
+    padding: .85714em;
+    font-size: .875em;
+    line-height: 1.71429em;
+    border-radius: .35714em;
+    user-select: text;
+    cursor: auto;
+}
+ul{
+    list-style-type: none;
+    color: #292d35;
+}
